@@ -3,9 +3,87 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #wrapper 
 {
-    margin: 50px;
+    padding: 50px;
+}
+
+/* мусе бути */
+#waveform
+{
+    position: relative;
+    overflow: hidden;
+}
+
+/* кнопки управління */
+#control 
+{
+    padding: 10px 0;
+}
+
+#control button 
+{
+    padding: 5px 10px;
+    cursor: pointer;
+    background: tomato;
+    color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+/* плейлист з кнопками (записи) */
+#playlist
+{
+    display: flex;
+    gap: 10px;
+}
+
+#playlist a 
+{
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background: tomato;
+    color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    font-size: 16px;
+}
+
+/* субтитри */
+#annotations
+{
+    max-height: 300px;
+    overflow: auto;
+}
+
+.wavesurfer-annotations tr.wavesurfer-active td
+{
+    background-color: yellow;
+}
+
+.wavesurfer-time
+{
+    width: 100px;
+    color: #555;
+}
+
+.wavesurfer-tier-Text
+{
+    width: 500px;
+}
+
+td.wavesurfer-tier-Comments
+{
+    color: #999;
+}
+
+.wavesurfer-handle
+{
+    background-color: #c9e2b3;
 }

@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>music test</title>
+    <title>music wavesurfer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg" href="./favicon.svg">
-    <meta name="description" content="test music">
+    <meta name="description" content="music wavesurfer">
 </head>
 <body>
     
     <div id="wrapper">
-        <audio controls>
-            <source src="music.ogg" type="audio/ogg">
-            <source src="music.mp3" type="audio/mpeg">
-            No audio support.
-        </audio> 
+
+        <div id="waveform"></div>
+
+        <div id="control">
+            <button data-action="play">
+                Play / Pause
+            </button>
+        </div>
+
     </div>
-
-
+    
+    <script src="js/wavesurfer.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
