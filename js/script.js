@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Load audio from URL
-    wavesurfer.load('../music/music-1.mp3');
+    wavesurfer.load('https://ring.techbigs.download/files/kgf-karuvinil-enai-.mp3');
     // wavesurfer.load('//nv.ua/system/Article/speeches/50198415_ukr.mp3');
 
     // toggle play button
